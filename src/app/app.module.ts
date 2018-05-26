@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TodoAppComponent } from './todo-app/todo-app.component';
 import { TodoInputComponent } from './components/todo-input/todo-input.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { LimitToPipe } from './pipes/limit-to.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoAppComponent,
     TodoInputComponent,
-    TodoListComponent
+    TodoListComponent,
+    LimitToPipe
   ],
   imports: [
     BrowserModule,
