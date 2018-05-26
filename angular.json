@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "todo",
+      "prefix": "ta",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
