@@ -1,5 +1,5 @@
 <div class="todo-input">
-  <input [placeholder]="placholderVal" [(ngModel)]="newTodoVal">
+  <input (keyup.enter)="addTodo()" [placeholder]="placholderVal" [(ngModel)]="newTodoVal">
   <button (click)="addTodo()">
     Add
   </button>

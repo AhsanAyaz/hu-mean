@@ -22,4 +22,12 @@ export class TodoAppComponent implements OnInit {
   ngOnInit() {
   }
 
+  addNewTodo(newTodoText) {
+    const newTodo = {
+      text: newTodoText,
+      done: false
+    };
+    this.todoList.push(newTodo);
+  }
+
 }

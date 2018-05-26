@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'ta-todo-input',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TodoInputComponent implements OnInit {
   placholderVal = 'Enter todo text from ts';
   newTodoVal = 'Some text from ts';
+  @Output() todoAdded = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
@@ -15,6 +16,7 @@ export class TodoInputComponent implements OnInit {
 
   addTodo() {
     console.log(this.newTodoVal);
+    this.todoAdded.emit(this.newTodoVal);
   }
 
 }
