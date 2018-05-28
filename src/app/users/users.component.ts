@@ -21,4 +21,8 @@ export class UsersComponent implements OnInit {
       });
   }
 
+  showUser(user) {
+    console.log(user);
+  }
+
 }

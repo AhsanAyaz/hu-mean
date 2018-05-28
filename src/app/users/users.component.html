@@ -1,6 +1,6 @@
 <div class="users">
   <div class="list">
-    <div class="list-item" *ngFor="let user of users">
+    <div class="list-item" *ngFor="let user of users" (click)="showUser(user)">
       {{user.name.first}} {{user.name.last}}
     </div>
   </div>
