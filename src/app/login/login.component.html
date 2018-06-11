@@ -1,0 +1,21 @@
+<div class="login-page">
+  <div class="heading">Login</div>
+  <form class="example-form" #loginForm="ngForm" (ngSubmit)="save(loginForm)">
+    <div class="form-field-full">
+      <mat-form-field>
+        <input matInput name="email" ngModel type="email" placeholder="email" required>
+      </mat-form-field>
+    </div>
+    <div class="form-field-full">
+      <mat-form-field>
+        <input name="password" ngModel matInput placeholder="password" required>
+      </mat-form-field>
+    </div>
+
+    <div class="submit-wrapper">
+      <button type="submit" mat-raised-button color="primary">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

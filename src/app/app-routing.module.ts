@@ -4,6 +4,7 @@ import { TodoAppComponent } from './todo-app/todo-app.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UsersComponent } from './users/users.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [ {
   path: '',
@@ -11,6 +12,9 @@ const routes: Routes = [ {
 }, {
   path: 'todo',
   component: TodoAppComponent
+}, {
+  path: 'login',
+  component: LoginComponent
 }, {
   path: 'users',
   component: UsersComponent
