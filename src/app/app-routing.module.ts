@@ -5,9 +5,11 @@ import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [ {
   path: '',
+  canActivate: [AuthGuard],
   component: HomeComponent
 }, {
   path: 'todo',
