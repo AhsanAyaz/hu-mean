@@ -6,8 +6,8 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./todo-input.component.scss']
 })
 export class TodoInputComponent implements OnInit {
-  placholderVal = 'Enter todo text from ts';
-  newTodoVal = 'Some text from ts';
+  placholderVal = 'Enter todo text';
+  newTodoVal = '';
   @Output() todoAdded = new EventEmitter<any>();
   constructor() { }
 
