@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Todo } from '../../models/todo';
 
 @Component({
   selector: 'ta-todo-list',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent implements OnInit {
-  @Input() list = [];
+  @Input() list: Todo[] = [];
   constructor() { }
 
   ngOnInit() {
