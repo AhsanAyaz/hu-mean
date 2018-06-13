@@ -17,6 +17,7 @@ export class TodoInputComponent implements OnInit {
   addTodo() {
     console.log(this.newTodoVal);
     this.todoAdded.emit(this.newTodoVal);
+    this.newTodoVal = '';
   }
 
 }

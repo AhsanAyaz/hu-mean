@@ -1,0 +1,15 @@
+.todo-list {
+  margin-top: 20px;
+  .todo-list-item {
+    padding: 8px;
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    margin-bottom: 6px;
+
+    &:hover {
+      background: #eee;
+      cursor: pointer;
+    }
+  }
+}
