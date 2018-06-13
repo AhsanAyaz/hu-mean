@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoService } from '../services/todo.service';
 
 @Component({
   selector: 'ta-todo-app',
@@ -17,9 +18,13 @@ export class TodoAppComponent implements OnInit {
     text: 'Review submissions',
     done: false
   }];
-  constructor() { }
+  constructor(private todoService: TodoService) { }
 
   ngOnInit() {
+    this.todoService.getTodos()
+      .subscribe((todos) => {
+        console.log(todos);
+      });
   }
 
   addNewTodo(newTodoText) {
