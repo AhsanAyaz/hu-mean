@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { LoginResp } from '../../models/login-resp';
+import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -12,7 +13,7 @@ export class AuthService {
   }
 
   login(credentials) {
-    return this.http.post<LoginResp>('http://localhost:3000/user/login', {
+    return this.http.post<LoginResp>(`${environment.apiBaseUrl}/user/login`, {
       user: credentials
     })
     .pipe(
